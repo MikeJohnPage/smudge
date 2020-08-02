@@ -1,13 +1,14 @@
 smudge_names <- function(vec, replace_na = TRUE){
 
-  # Check vec is of type character
+  # Check arg types
   stopifnot(is.character(vec))
-
-  # Check replace is of type logical
   stopifnot(is.logical(replace_na))
 
   # Load list of names
   names <- readRDS("data/names.rds")
+
+  # Concatenate cases
+  names <- c(names, tolower(names), toupper(names))
 
   # Remove names else replace with NA
   if(replace_na == TRUE){
