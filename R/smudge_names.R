@@ -13,11 +13,10 @@ smudge_names <- function(vec, replace_na = TRUE){
   if(replace_na == TRUE){
     vec[vec %in% names] = NA
   } else {
-    vec[!(vec %in% names)]
+    vec <- vec[!(vec %in% names)]
   }
 
   # Return vec
   return(vec)
 
 }
-
