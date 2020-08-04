@@ -1,7 +1,7 @@
 # smudge
 
 ## Overview
-smudge provides a consistent set of verbs to remove the following personal data from text:
+smudge provides a consistent set of vectorised verbs to remove the following personal data from text:
 - emails  
 - names  
 - dates  
