@@ -1,21 +1,19 @@
 # smudge
 
 ## Overview
-smudge provides a consistent set of vectorised verbs to remove the following personal data from text:
+smudge personal data from your text, including:
 - emails  
 - names  
 - dates  
 - phone numbers  
 - street addresses  
-- zip codes (US)  
-- postcodes (UK)  
-- all of the above  
+- postcodes & zip codes
 
 ## Usage
-All functions in smudge start with `smudge_` and take a vector of strings as the first argument. By default, identified personal data will be replaced with `NA`:
+All functions start with `smudge_` and take a vector of strings as the first argument. By default, personal data will be replaced with `NA`:
 
 
-If you wish to drop any identified personal data, the second argument to all smudge functions, `replace_na`, can be set to `FALSE`:
+If instead you wish to drop personal data, the second argument to all smudge functions, `replace_na`, can be set to `FALSE`:
 
 Combine with your favourite dplyr verbs to easily remove personal data from data frames:
 
