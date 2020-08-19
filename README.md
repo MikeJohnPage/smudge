@@ -15,7 +15,7 @@ smudge personal data from your text, including:
 All functions start with `smudge_` and take a vector of strings as the first argument. By default, personal data will be replaced with `NA`:
 
 
-If instead you wish to drop personal data, the second argument to all smudge functions, `replace_na`, can be set to `FALSE`:
+If instead you wish to drop personal data, the second argument to all smudge functions, `replace_with_na`, can be set to `FALSE`:
 
 Combine with your favourite dplyr verbs to easily remove personal data from data frames:
 
