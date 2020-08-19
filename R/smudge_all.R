@@ -1,4 +1,4 @@
-smudge_all <- function(vec, replace_na = TRUE) {
+smudge_all <- function(vec, replace_with_na = TRUE) {
 
   # Check arg types
   stopifnot(is.character(vec))
@@ -11,7 +11,7 @@ smudge_all <- function(vec, replace_na = TRUE) {
   names <- c(names, tolower(names), toupper(names))
 
   # Remove all personal data else replace with NA
-  if(replace_na == TRUE){
+  if(replace_with_na == TRUE){
 
     # Names
     vec[vec %in% names] = NA
