@@ -1,4 +1,4 @@
-# smudge
+# smudge <img src='man/figures/logo/smudge-logo.png' align="right" height="150" /></a>
 
 ## Overview
 smudge personal data from your text, including:
