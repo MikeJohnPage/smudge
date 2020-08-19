@@ -9,7 +9,7 @@ smudge personal data from your text, including:
 - dates  
 - phone numbers  
 - street addresses  
-- postcodes & zip codes
+- UK postcodes
 
 ## Usage
 All functions start with `smudge_` and take a vector of strings as the first argument. By default, personal data will be replaced with `NA`:
