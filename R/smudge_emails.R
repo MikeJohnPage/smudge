@@ -2,7 +2,7 @@ smudge_emails <- function(vec, replace_with_na = TRUE){
 
   # Check arg types
   stopifnot(is.character(vec))
-  stopifnot(is.logical(replace_na))
+  stopifnot(is.logical(replace_with_na))
 
   # Remove emails else replace with NA
   if(replace_with_na == TRUE){

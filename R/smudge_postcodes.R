@@ -2,7 +2,7 @@ smudge_postcodes <- function(vec, replace_with_na = TRUE){
 
   # Check arg types
   stopifnot(is.character(vec))
-  stopifnot(is.logical(replace_na))
+  stopifnot(is.logical(replace_with_na))
 
   # Remove postcodes else replace with NA
   if(replace_with_na == TRUE){

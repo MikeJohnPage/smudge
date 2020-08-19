@@ -2,7 +2,7 @@ smudge_names <- function(vec, replace_with_na = TRUE){
 
   # Check arg types
   stopifnot(is.character(vec))
-  stopifnot(is.logical(replace_na))
+  stopifnot(is.logical(replace_with_na))
 
   # Load list of names
   names <- readRDS("data/names.rds")
